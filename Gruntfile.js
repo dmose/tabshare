@@ -9,9 +9,12 @@ module.exports = function(grunt) {
           archive: 'TabShare.xpi',
           mode: 'zip'
         },
-        files: {
-          src: ['install.rdf', 'bootstrap.js']
-        }
+        files:[
+          {
+            flatten: true,
+            src: ['install.rdf', 'bootstrap.js']
+          }
+        ]
       }
     }
   });
